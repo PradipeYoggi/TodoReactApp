@@ -12,10 +12,10 @@ The code in TodoService.js has the url to the crudcrud service appended to the t
 
 Basic structure in code of the app:
 
-App functional React component
-  -- TodoList functional React component
-    -- TodoCrudForm functional React component
-      -- TodoTable functional React component
+* App functional React component
+  * TodoList functional React component (handles all data management using the TodoService)
+    * TodoCrudForm functional React component
+    * TodoTable functional React component
       
 TodoService which does all the interactions with the CrudCrud Todo APIs. This service has very simple error handling. Certainly better error handling can be added as one would in a professional setting, vs. an academic setting.
 
