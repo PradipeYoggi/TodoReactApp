@@ -1,21 +1,70 @@
-# TodoReactApp
+# Getting Started with Create React App
 
-TODO App is a simple React App that use Functional React Components to implement a simple Todo app.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The user can input the task title, description, when it needs to be started and the due date to finish it.
+## Available Scripts
 
-The supported features are the ability to Add, Update and Delete items from the todo list. The todo list is shown in a table on the right side. Any row in the table can be clicked to load that row into the Todo form where it can be edited and updated or deleted or the data use as a base for additing a new todo.
+In the project directory, you can run:
 
-The app hits the CrudCrud API service. Due to CORS restrictions on the CrudCrud server, the user/tester may have to use a proxy server such as https://cors-anywhere.herokuapp.com/corsdemo This url should be visited from the machine where the app will be tested/run to get a temporary authorization for that system to use this proxy server.
+### `npm start`
 
-The code in TodoService.js has the url to the crudcrud service appended to the the above proxy server url and thus the code won't work when run unless the above steps are followed.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Basic structure in code of the app:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* App functional React component
-  * TodoList functional React component (handles all the data fetching using the TodoService)
-    * TodoCrudForm functional React component (handles the C/U/D operations of the todo data loaded or input into the form)
-    * TodoTable functional React component (shows all the Todos and allows selecting a todo by clicking on a row)
-      
-TodoService which does all the interactions with the CrudCrud Todo APIs. This service has very simple error handling. Certainly better error handling can be added as one would in a professional setting, vs. an academic setting.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
