@@ -15,6 +15,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### CORS handling
+https://cors-anywhere.herokuapp.com is used a proxy server to CrudCrud (which has a CORS restriction)
+So prior to running/testing the app on a machine go to https://cors-anywhere.herokuapp.com and click the button to get okay to use the proxy. This is valid for several hours and the app can be tested then with npm start.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
